@@ -1,0 +1,17 @@
+CREATE TABLE Skateboard_Inventory (id INTEGER PRIMARY KEY , color TEXT, year INTEGER, quantity INTEGER, wholesale INTEGER, price INTEGER);
+INSERT INTO Skateboard_Inventory VALUES (1, "red", 2000, 5, 7, 27);
+INSERT INTO Skateboard_Inventory VALUES (2, "yellow", 1991, 8, 6, 36);
+INSERT INTO Skateboard_Inventory VALUES (3, "green", 2004, 4, 3, 13);
+INSERT INTO Skateboard_Inventory VALUES  (5, "purple", 2019, 25, 10, 80);
+INSERT INTO Skateboard_Inventory VALUES (6, "black", 1972, 6, 12, 98);
+INSERT INTO Skateboard_Inventory VALUES (7, "brown", 2018, 16, 7, 37);
+INSERT INTO Skateboard_Inventory VALUES (8, "gradient", 2014, 9, 9, 29);
+INSERT INTO Skateboard_Inventory VALUES (9, "pink", 2011, 2, 19, 49);
+INSERT INTO Skateboard_Inventory VALUES (10, "grey", 2016, 7, 12, 99);
+INSERT INTO Skateboard_Inventory VALUES (11,"lime", 2013, 15, 15, 35);
+INSERT INTO Skateboard_Inventory VALUES (12, "gold", 1982, 1, 30, 150);
+INSERT INTO Skateboard_Inventory VALUES (13, "bronze", 1999, 8, 18, 75);
+INSERT INTO Skateboard_Inventory VALUES (14, "clear", 1998, 19, 20, 75);
+INSERT INTO Skateboard_Inventory VALUES (15, "orange", 2021, 10, 5, 65);
+SELECT * FROM Skateboard_Inventory ORDER BY price;
+SELECT SUM(quantity) FROM Skateboard_Inventory;
